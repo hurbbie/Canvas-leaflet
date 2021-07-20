@@ -324,6 +324,7 @@ Number is the variable we define by extracting ElementID Input to First.value Is
 As the Code below
   
    ```javascript
+  var level_water = function(){
   var num = Number(first.value);
   var num2 = 0.3;
                 var num3 = 0.452;
@@ -346,11 +347,13 @@ As the Code below
                 context.lineTo(context.canvas.width3, y5);
                 context.stroke();
                 context.closePath();
+  }
   ```
   - In this case, we'll use it as 0-100 %, so we have to define  if in the condition that our input is not more than and not less than 0-100
 So it will be like this
   
   ```javascript
+  var level_water = function(){
   var num = Number(first.value);
   if (num >= 0 && num <= 100) {
                 var num2 = 0.3;
@@ -379,6 +382,7 @@ So it will be like this
             else {
                 alert("Please enter number 0-100% ");
             }
+  }
   ```
 - For Clear_function() function It is a call to the function of the display to be the same.  and set a value to clear the value entered from Input
              
