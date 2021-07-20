@@ -277,7 +277,9 @@ An example will be in the function func_chk(); To see the full of function func_
   - This is for Check the CheckBox whether it has been pressed or noted or not  If there is noted, it will Check==true so which the CheckBox has been separated Id to chk1-4 Therefore, it is much the conditions for setting it up.
 *** Note: Since it's not possible to find a way to remove or solve a function call, If is required to check the CheckBox condition.
   ```javascript
-   if ((document.all.chk1.checked == true) && (document.all.chk2.checked == true) && (document.all.chk3.checked == true) && (document.all.chk4.checked == true)) {
+  var func_chk = function()
+  { 
+    if ((document.all.chk1.checked == true) && (document.all.chk2.checked == true) && (document.all.chk3.checked == true) && (document.all.chk4.checked == true)) {
                 render();
                 innerLine(test1);
                 outLine();
@@ -289,6 +291,7 @@ An example will be in the function func_chk(); To see the full of function func_
                 window.addEventListener("resize", outLine);
                 window.addEventListener("resize", level_water);
             }
+  }
    ```
   HTML create inpput and button
 ```HTML
